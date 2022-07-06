@@ -36,7 +36,7 @@ var currentMonth = date.getMonth();
 //auto sets the month to present time
 document.querySelector('.date h1').innerHTML =months[currentMonth];
 //auto sets the date
-document.querySelector(".date p").innerHTML = date.toDateString();
+document.querySelector(".date p").innerHTML = new Date().toDateString();
 
 let days = "";
 //by placing the first day loop, first it auto generates the month that is set based off the first days index number
@@ -57,9 +57,9 @@ for(var i = 1;i <= lDay;i++){
 //this generates the last couple of days if theres room
 for(var n = 1;n <= nextDays;n++){
     days += `<div class="next-date">${n}</div>`;
-    mDays.innerHTML = days;
+   mDays.innerHTML = days;
 };
-
+ 
 }
 
 
