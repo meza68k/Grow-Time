@@ -15,6 +15,8 @@ h1 {
 }
 
 #info-boxes {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     border: 5px solid var(--secondary-color);
     margin: 0 auto;
@@ -29,6 +31,7 @@ h1 {
     text-shadow: 3px 3px 3px var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
+    padding: 10px;
 }
 
 .thyme, .mint, .sage, .tomatillo, .squash, .watermelon, .pepper, .okra {
@@ -38,6 +41,7 @@ h1 {
     text-shadow: 3px 3px 3px var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
+    padding: 10px;
 }
 
 p {
