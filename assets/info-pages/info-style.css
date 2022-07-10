@@ -22,7 +22,7 @@ h1 {
     margin: 0 auto;
     border-radius: 10px;
     background-color: var(--quaternary-color);
-    opacity: 50%;
+    opacity: 75%;
 }
 
 ul {
@@ -46,6 +46,3 @@ p, h2 {
     padding: 10px;
 }
 
-#pollinator-list ul, #flowering-list ul {
-    text-shadow: 3px 3px 3px var(--quinary-color);
-}
