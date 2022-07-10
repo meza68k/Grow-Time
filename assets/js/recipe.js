@@ -21,12 +21,32 @@ var ingList4 = [];
 var ingList5 = [];
 var ingList6 = [];
 
+function addPic(pic,id) {
+    var img = document.createElement('img');
+    img.src = pic;
+    document.getElementById(id).appendChild(img);
+};
+function delPic(id) {
+    var div = document.getElementById(id);
+    div.innerHTML = "";
+};
+function clearIng(id){
+    list = document.getElementById(id)
+    list.innerHTML = "";
+};
 var ingList = [];
 var vegTitle = document.getElementById('vegName')
-var render = function(){
 var input = document.getElementById('search');
 input.value = "Tomatillo"
-var search = input.value
+
+var render = function(){
+    
+var search = input.value 
+for(var p = 0;p<7;p++){
+    delPic(`pic${p}`);
+};
+
+
 fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=${search}`, options)
 .then(function(response){
     return response.json();
@@ -36,21 +56,40 @@ fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=${search}`, options)
     vegTitle.innerText = vegName;
     //for loop dynamically changes the recipes based on the search
      var recList = (response.hits);
+    for(var l = 0;l<7;l++){
+    clearIng(`igList${l}`);
+    debugger;
+};
+
+     var pic0 = (response.hits[0].recipe.image);
+     var pic1 = (response.hits[1].recipe.image);
+     var pic2 = (response.hits[2].recipe.image);
+     var pic3 = (response.hits[3].recipe.image);
+     var pic4 = (response.hits[4].recipe.image);
+     var pic5 = (response.hits[5].recipe.image);
+     var pic6 = (response.hits[6].recipe.image);
+
+     addPic(pic0, "pic0");
+     addPic(pic1, "pic1");
+     addPic(pic2, "pic2");
+     addPic(pic3, "pic3");
+     addPic(pic4, "pic4");
+     addPic(pic5, "pic5");
+     addPic(pic6, "pic6");
+     
     for(var i = 0;i < 7;i++){
         var recTitle = document.getElementById(`rec${i}`);
        
        
         ingList = (recList[i].recipe.ingredientLines);
         recTitle.innerText = (recList[i].recipe.label);
-        console.log(recList[i].recipe.label);
-        console.log(ingList);
     }
     console.log(response);
     ingList0 = (response.hits[0].recipe.ingredientLines);
     for(var x = 0;x < ingList0.length;x++){
         igList0.innerHTML += `<li>${ingList0[x]}</li>`;
-        
     };
+    
     ingList1 = (response.hits[1].recipe.ingredientLines);
     for(var y = 0;y < ingList1.length;y++){
         igList1.innerHTML += `<li>${ingList1[y]}</li>`;
