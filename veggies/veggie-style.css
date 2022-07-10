@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #f7c400;
+    --secondary-color: #3e3e40;
+    --tertiary-color: #b3da81;
+    --quaternary-color: #f4f4f4;
+    --quinary-color: #84694e; 
+}
+
+h1 {
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 130px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 3px var(--secondary-color);
+    text-align: center;
+}
+
+#info-boxes {
+    width: 50%;
+    border: 5px solid var(--secondary-color);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--quaternary-color);
+    opacity: 50%;
+}
+
+.basil, .lemongrass {
+    font-family: "Shadows Into Light", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.thyme, .mint, .sage, .tomatillo, .squash, .watermelon, .pepper, .okra {
+    font-family: "Shadows Into Light", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+p {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: none;
+    padding: 10px;
+}
+
