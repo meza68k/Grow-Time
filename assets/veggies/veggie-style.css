@@ -22,7 +22,7 @@ h1 {
     margin: 0 auto;
     border-radius: 10px;
     background-color: var(--quaternary-color);
-    opacity: 50%;
+    opacity: 75%;
 }
 
 .basil, .lemongrass {
