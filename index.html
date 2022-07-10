@@ -4,10 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="style.css" />
+
+          <!--GoogleFont link-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rum+Raisin&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style.css" />
     </head>
 
    <header> 
+
     <section class="top-nav">
         <input id="menu-toggle" type="checkbox" />
         <label class='menu-button-container' for="menu-toggle">
@@ -15,66 +19,150 @@
         </label>
         <ul class="menu">
           <li>Journal</li>
-          <li>Calendar</li>
+          <li>Recipes</li>
           <li>Weather</li>
         </ul>
     </section>
+
     <div class="logo">
-        <img src="Grow Time.jpg" alt="plant" width="250px" height="150px">
+        <!--<img src="Grow Time.jpg" alt="plant" width="250px" height="150px">-->
+        <h1>GrowTime</h1>
     </div> 
     <br>
-    <p class="slogan">A guide to organic vegetable gardening in Texas!</p>
+    <p class="slogan">A guide to organic vegetable gardening in North Texas</p>
    </header>
 
-   <hr>
+   <!--<hr>-->
 
     <main class="sections">
-        <div class="sections__colum">
+
+        <style>
+            body {
+                background-image: url('./assets/images/garden.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+
+        <div class="sections__column">
 
             <section class="aSection">
-             <h1>What’s In Season? </h1>
-             <p>(this needs to be dynamic and update according to time of year)
-                (Link see the full planting season guide.)
-                (Cards with veggie image and link to individual item info pages:)
-            </p>
-            <div class="images">
-                <img src="Tomatillos.avif" alt="tomatillos" width="250px" height="350px">
-                <img src="" alt="squash" width="150px" height="150px">
-                <img src="" alt="melons" width="150px" height="150px">
-                <img src="" alt="peppers" width="150px" height="150px">
-                <img src="" alt="okra" width="150px" height="150px">
-            </div>
+                <h1>What's In Season? </h1>
+                
+                <div class="images">
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/tomatillo_sm.jpg" alt="tomatillos" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Tomatillo</h5>
+                            </div> 
+                        </a>   
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/squash_sm.jpg" alt="squash" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Squash</h5>
+                            </div>  
+                        </a>  
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/watermelon_sm.jpg" alt="watermelon" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Watermelon</h5>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/pepper_sm.jpg" alt="peppers" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Peppers</h5>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/okra_sm.jpg" alt="okra" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Okra</h5>
+                            </div>   
+                        </a>     
+                    </div>
+                </div>
             </section>
 
             <section class="bSection">
-             <h2>What Do I Need to Get Started?</h2>
-             <ul>
-                <li>A sunny location that gets at least 6-8 hours of sunlight per day.</li>
-                <br>
-                <li>Depending on your space allotment: lots of pots (most veggies do well in pots!), raised beds (wood is ideal) or a spot on the ground that has been tilled and is free from grass and weeds</li>
-                <br>
-                <li>Good soil and tons of COMPOST</li>
-                    <ul>
-                        <li>What is compost? Organic material (veggie scraps, yard clippings, etc) that has been naturally broken down into super nutrient-dense soil.</li>
-                        <li>Where do I get it? Any local gardening supply shop will have some. Or you can make your own! </li>
-                    </ul>
-                </li>
-                <br>
-                <li>Mulch! This will go on top of your soil, around the plants, to hold in moisture that evaporates quickly in the Texas heat.</li>
-                <br>
-                <li>Seeds or transplants. If you are just getting into growing, transplants are the way to go. Your local garden shop will have anything available that’s in season.</li>
-                <br>
-                <li>A water source. Even watering is important for growing food so, make sure you set a watering schedule for yourself or set up a automated timer system through your outdoor faucet or sprinkler system. Always check the weather to see when Mother Nature might give you some FREE water!</li>
-                <br>
-                <li>Plant food. Plants need to eat just like we do! Set yourself a regular feeding schedule so your plants don’t go hungry.</li>
-             </ul>
+                <h1>What Do I Need to Get Started?</h1>
+                <ul>
+                    <li>A sunny location that gets at least 6-8 hours of sunlight per day.</li>
+                    <br>
+                    <li>Depending on your space allotment: lots of pots (most veggies do well in pots!), raised beds (wood is ideal) or a spot on the ground that has been tilled and is free from grass and weeds</li>
+                    <br>
+                    <li>Good soil and tons of COMPOST</li>
+                        <ul>
+                            <li>What is compost? Organic material (veggie scraps, yard clippings, etc) that has been naturally broken down into super nutrient-dense soil.</li>
+                            <li>Where do I get it? Any local gardening supply shop will have some. Or you can make your own! </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Mulch! This will go on top of your soil, around the plants, to hold in moisture that evaporates quickly in the Texas heat.</li>
+                    <br>
+                    <li>Seeds or transplants. If you are just getting into growing, transplants are the way to go. Your local garden shop will have anything available that’s in season.</li>
+                    <br>
+                    <li>A water source. Even watering is important for growing food so, make sure you set a watering schedule for yourself or set up a automated timer system through your outdoor faucet or sprinkler system. Always check the weather to see when Mother Nature might give you some FREE water!</li>
+                    <br>
+                    <li>Plant food. Plants need to eat just like we do! Set yourself a regular feeding schedule so your plants don’t go hungry.</li>
+                </ul>
             </section>
 
             <section class="cSection">
-             <h3>Don’t Forget About Herbs!</h3>
-             <p>(this will also need to be dynamic to update time of year)
-                Herbs are very easy to grow and can save you a ton of money at the grocery store. They are a very easy way to add some freshness and flavor to your meals! 
-                </p>
+                <h1>Don't Forget About Herbs!</h1>
+                <p>Herbs are very easy to grow and can save you a ton of money at the grocery store. They are a great way to add some freshness and flavor to your meals!</p>
+                <div class="images">
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/basil_sm.jpg" alt="basil" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Basil</h5>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/thyme_sm.jpg" alt="thyme" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Thyme</h5>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/mint_sm.jpg" alt="mint" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Mint</h5>
+                            </div>   
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/lemongrass_sm.jpg" alt="lemongrass" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Lemongrass</h5>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="./assets/images/sage_sm.jpg" alt="sage" width="150px" height="150px">
+                            <div class="img-text">
+                                <h5>Sage</h5>
+                            </div>  
+                        </a>  
+                    </div>
+                </div>
             </section>
         </div>
     </main>
