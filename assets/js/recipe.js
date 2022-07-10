@@ -23,7 +23,11 @@ var ingList6 = [];
 
 var ingList = [];
 var vegTitle = document.getElementById('vegName')
-fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=tomatillo`, options)
+var render = function(){
+var input = document.getElementById('search');
+input.value = "Tomatillo"
+var search = input.value
+fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=${search}`, options)
 .then(function(response){
     return response.json();
  })
@@ -82,3 +86,6 @@ fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=tomatillo`, options)
     
 })
 .catch(err => console.error(err));
+};
+
+render();
