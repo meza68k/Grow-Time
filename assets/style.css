@@ -117,7 +117,7 @@ header {
     margin-top: 50px;
     left: 0;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -258,4 +258,12 @@ h5 {
   font-family: "Shadows Into Light", sans-serif;
   font-size: 30px;
   text-shadow: 2px 2px 2px var(--secondary-color);
+}
+
+a {
+  color: var(--quaternary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
 }
