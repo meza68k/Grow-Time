@@ -21,8 +21,7 @@ h1 {
     border: 5px solid var(--secondary-color);
     margin: 0 auto;
     border-radius: 10px;
-    background-color: var(--quaternary-color);
-    opacity: 75%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .basil, .lemongrass {
