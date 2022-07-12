@@ -1,0 +1,15 @@
+
+.current {
+    justify-content: center;
+}
+
+.weather-info {
+display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #f4f4f4;
+    font-size: 22px;
+    font-weight: lighter;
+}
